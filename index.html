@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Multiple object detection using pre-trained model in TensorFlow.js</title>
+  <meta charset="utf-8">
+  <!-- Linking an external CSS file to this HTML document  -->
+  <link rel="stylesheet" href="style.css">
+</head>  
+<body>
+  <!-- Heading for the document -->
+  <h1>Smart Webcam using TensorFlow.js</h1>
+
+  <p>
+    This is a useful tool which detects objects of any kind, including regular objects like cats, dogs, and people, and draws a box around the detected object using the webcam.
+  </p>
+  <p>Wait for the model to load before clicking the button.</p>
+
+  <section id="demos" class="invisible">
+    <p>Activate your webcam and grant access to it when prompted by the browser in order to perform real-time classification by holding objects up close to the camera. Ensure to click "enable webcam" below before proceeding.</p>
+  
+    <div id="liveView" class="camView">
+      <button id="webcamButton">Enable Webcam</button>
+      <video id="webcam" autoplay muted width="640" height="480"></video>
+    </div>
+  </section>
+
+  <!-- Importing TensorFlow.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
+  <!-- Loading the coco-ssd model to recognize things in images -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+
+  <!-- Importing the JavaScript file -->
+  <script src="script.js" defer></script>
+</body>
+</html>

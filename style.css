@@ -1,0 +1,61 @@
+/* Styling for the body */
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  color: #3D3D3D;
+}
+
+/* Styling for the h1 heading */
+h1 {
+  font-style: italic;
+  color: #006400;
+}
+
+/* Styling for video elements */
+video {
+  display: block;
+}
+
+/* Styling for the section element */
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+/* Styling for elements with the "removed" class */
+.removed {
+  display: none;
+}
+
+/* Styling for elements with the "invisible" class */
+.invisible {
+  opacity: 0.2;
+}
+
+/* Styling for elements with the "camView" class */
+.camView {
+  position: relative;
+  float: left;
+  width: calc(100% - 20px);
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Styling for p elements within elements with the "camView" class */
+.camView p {
+  position: absolute;
+  padding: 5px;
+  background-color: rgba(255, 111, 0, 0.85);
+  color: #FFF;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+}
+
+/* Styling for elements with the "highlighter" class */
+.highlighter {
+  background: rgba(0, 255, 0, 0.25);
+  border: 1px dashed #fff;
+  z-index: 1;
+  position: absolute;
+}
